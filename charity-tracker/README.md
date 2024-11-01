@@ -14,7 +14,7 @@ Welcome to the **KindnessCounts** project! This web application allows users to 
 
 ## Demo
 
-![alt text](../Snippet.png)
+![alt text](Snippet.png)
 
 ## Technologies Used
 - **Flask**: A lightweight WSGI web application framework in Python.
