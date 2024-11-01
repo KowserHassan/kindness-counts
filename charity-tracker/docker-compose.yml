@@ -1,0 +1,17 @@
+
+
+services:
+  web:
+    build:
+      context: ./app        
+    ports:
+      - "8080:5000"
+    volumes:
+      - ./app:/app
+    depends_on:
+      - redis
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"

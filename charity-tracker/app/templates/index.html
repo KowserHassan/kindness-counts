@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Tracker</title>
+    <style>
+        body {
+            background-image: url('/static/background.jpg');
+            background-size: cover;
+            text-align: center;
+            color: white; /* Changed text color to white for better contrast */
+            font-family: Arial, sans-serif;
+        }
+        .welcome-message {
+            font-size: 1.8em; /* Adjust the font size as needed */
+            margin: 20px 0; /* Add margin for spacing */
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0; /* Remove top margin for better alignment */
+        }
+        p {
+            font-size: 1.5em;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            color: white; /* Keep footer text white for clarity */
+        }
+        .cause {
+            margin-top: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            color: white; /* Keep cause text white */
+        }
+        .cause img {
+            width: 400px; /* Adjust width as needed */
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-message">
+        Hi I'm Kowser👋🏾, Welcome to KindnessCounts! For every 100 visitors, I'll donate to any of the causes below.
+    </div>
+
+    <div class="cause">
+        <h2>{{ cause.title }}</h2>
+        <p>{{ cause.description }}</p>
+        <img src="/static/{{ cause.image }}" alt="{{ cause.title }} image"> <!-- Display corresponding image -->
+    </div>
+    
+    <footer>
+        <p>Visitor count: {{ count }}</p>
+        <p>Thank you for visiting! Share this page to help us spread the word and increase our impact!</p>
+    </footer>
+</body>
+</html>
