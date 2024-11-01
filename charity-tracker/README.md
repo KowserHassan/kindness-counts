@@ -12,6 +12,10 @@ Welcome to the **KindnessCounts** project! This web application allows users to 
 - Showcases different causes related to education, mental health, clean water, and more.
 - Vibrant and responsive design for a better user experience.
 
+## Demo
+
+![alt text](../Snippet.png)
+
 ## Technologies Used
 - **Flask**: A lightweight WSGI web application framework in Python.
 - **Redis**: Used for counting visitors and storing data.
